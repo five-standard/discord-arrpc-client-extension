@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Discord RPC Bridge",
+  "version": "1.0.0",
+  "description": "Discord Rich Presence bridge for web client",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["https://discord.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://discord.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "options.html"
+  }
+}
