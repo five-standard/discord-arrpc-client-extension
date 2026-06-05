@@ -1,0 +1,3 @@
+- arRPC Bridge Server 연결용 확장 프로그램
+- 디스코드 웹 클라이언트에서 손쉽게 Rich Presence를 사용하고 싶어 개발함
+- [arRPC](https://github.com/OpenAsar/arrpc) 의 일부 소스코드 (examples/bridge_mod.js 등) 를 분석하여 개발함
